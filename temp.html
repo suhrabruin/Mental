@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="question-container" id="question-container">
+            <div class="question-header">
+                <button class="question-cancel-btn" id="question-cancel-btn">X</button>
+                <h2 class="question-title">Please let us know about your background?</h2>
+            </div>            
+
+            <div class="question-body">
+                <ul class="question-items">
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction2" name="addiction2" class="addictions" value="Ciggarate">
+                        <label for="addiction2">Ciggarate</label>
+                    </li>
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction3" name="addiction3" class="addictions" value="Snuff">
+                        <label for="addiction3">Snuff</label>                    
+                    </li>
+                    <li class="question-item">      
+                        <input type="checkbox" id="addiction1" name="addiction1" class="addictions" value="Alcohol">
+                        <label for="addiction1">Alcohol</label>
+                    </li>
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction4" name="addiction4" class="addictions" value="Chemical/Narcotic Drug">
+                        <label for="addiction4">Chemical/Narcotic Drug</label>
+                        
+                    </li>                   
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction5" name="addiction5" class="addictions" value="Other">
+                        <label for="addiction5">Other</label>                    
+                    </li>
+                </ul>
+                <button class="btn" id="btn-test">Submit</button>
+            </div>
+        </div>
+        <script>
+            const btnTest = document.getElementById('btn-test')
+            btnTest.addEventListener('click',()=>{                
+                const arr =[]
+                document.querySelectorAll('input[class=addictions]:checked').forEach(function(elem) {
+                    arr.push(elem.value)
+                });
+                console.log(arr);
+            })
+            
+        </script>
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/ddf0bb7357.js" crossorigin="anonymous"></script>
+
+
+
+<!-- 1 -->
+<!--
+<p class="question-text">Select your gender identity?</p>                
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-gender" id="gender-male">Male</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-gender" id="gender-female">Female</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-gender" id="gender-nottosay">Prefer not to say</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-gender" id="gender-other">Other</button>
+                    </li>
+                </ul>
+
+-->
+
+<!-- 2 -->
+<!--
+    <p class="question-text">Type your age?</p>
+                <form id="question-form-age">
+                    <input 
+                    type="number" 
+                    name="age" 
+                    id="age" 
+                    class="question-input"
+                    placeholder="Type your age">
+                    <button type="submit" class="btn btn-next" id="btn-age">Next</button>
+                </form> 
+-->
+
+<!-- 3-->
+
+<!--
+<p class="question-text">Select your marital status?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-marital-status" id="single">Single</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-marital-status" id="married">Married</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-marital-status" id="divorced">Divorced</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-marital-status" id="widow">Widow</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-marital-status" id="nottosay">Prefer not to say</button>
+                    </li>
+                </ul>   
+
+-->
+
+<!-- 4 -->
+<!-- 
+     <p class="question-text">Select your religion?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="islam">Islam</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="christianity">Christianity</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="jewish">Jewish</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="hindu">Hindu</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="other">Other</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="none_believer">None Believer</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="nottosay">Prefer not to say</button>
+                    </li>
+                </ul>
+ -->
+
+<!-- 5 -->
+<!-- 
+     <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="yes">Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-religion" id="no">No</button>
+                    </li>                    
+                </ul>
+ -->
+
+ <!-- 6 -->
+ <!-- <p class="question-text">Do you live with your family member?</p>
+ <ul class="question-items">
+     <li class="question-item">
+         <button class="btn btn-with-family" id="yes">Yes</button>
+     </li>                    
+     <li class="question-item">
+         <button class="btn btn-with-family" id="partially">Partially Yes</button>
+     </li>                    
+     <li class="question-item">
+         <button class="btn btn-with-family" id="no">No</button>
+     </li>                    
+ </ul> -->
+
+<!-- 7 -->
+
+<!-- 
+     <p class="question-text">Do you feel save?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-fell-save" id="yes">Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-fell-save" id="partially">Partially Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-fell-save" id="no">No</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-fell-save" id="don't know">I don't know</button>
+                    </li>                    
+                </ul>
+ -->
+
+<!-- 8 -->
+<!-- 
+    <li class="question-item">
+                        <button class="btn btn-live-country" id="origin">Country of Origin</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-live-country" id="third">Third Country</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-live-country" id="destination">Destination Country</button>
+                    </li>
+ -->
+
+<!-- 9 -->
+<!-- <p class="question-text">Do you have permanent shelter?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-shelter" id="camp">I live in a camp/ refugees tent</button>
+    </li>                    
+    <li class="question-item">
+        <button class="btn btn-shelter" id="temporary_shelter">I live in a temporary shelter</button>
+    </li>                    
+    <li class="question-item">
+        <button class="btn btn-shelter" id="permanent">I live in a permanent appartment</button>
+    </li>
+</ul> -->
+
+
+<!-- 10 -->
+<!-- 
+    <p class="question-text">Do you have any case as asylum seeker in any country?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-asylum-seeker" id="under_process">Yes - Under Process</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-asylum-seeker" id="completed">Yes- Already completed</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-asylum-seeker" id="no">No</button>
+                    </li>
+                </ul>
+ -->
+
+<!-- 11 -->
+<!-- 
+    <p class="question-text">Do you have language difficulties in communication?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-language-difficulties" id="yes">Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-language-difficulties" id="sometimes">Sometimes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-language-difficulties" id="no">No</button>
+                    </li>
+                </ul>
+ -->
+
+ <!-- 12 -->
+ <!-- 
+    <p class="question-text">Have you ever participated to any language course in country you are?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-language-course" id="yes">Yes</button>
+                    </li>                                        
+                    <li class="question-item">
+                        <button class="btn btn-language-course" id="no">No</button>
+                    </li>
+                </ul>
+  -->
+
+  <!-- 13 -->
+  <!-- 
+     <p class="question-text">Do you fell cultural difficulties in country you live?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-cultural-difficulties" id="yes">Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-cultural-difficulties" id="sometimes">Sometimes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-cultural-difficulties" id="no">No</button>
+                    </li>
+                </ul>
+   -->
+
+   <!-- 14 -->
+<!-- 
+     <p class="question-text">Have you ever participated any cultural orientation program in country you live?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-cultural-orientation" id="yes">Yes</button>
+                    </li>                    
+                    <li class="question-item">
+                        <button class="btn btn-cultural-orientation" id="no">No</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-cultural-orientation" id="dontwant">I don't want to participate</button>
+                    </li>                    
+                </ul>
+ -->
+
+<!-- 
+ <p class="question-text">Are you currently emloyeed?</p>
+ <ul class="question-items">
+     <li class="question-item">
+         <button class="btn btn-employement" id="yes">Yes</button>
+     </li>                    
+     <li class="question-item">
+         <button class="btn btn-employement" id="no">No</button>
+     </li>            
+ </ul> -->
+
+
+<!-- 
+ <p class="question-text">How do you fell about your financial status?</p>
+ <ul class="question-items">
+     <li class="question-item">
+         <button class="btn btn-financial-status" id="exellent">Exellent</button>
+     </li>
+     <li class="question-item">
+         <button class="btn btn-financial-status" id="good">Good</button>
+     </li>
+     <li class="question-item">
+         <button class="btn btn-financial-status" id="fair">Fair</button>
+     </li>
+     <li class="question-item">
+         <button class="btn btn-financial-status" id="bad">Bad</button>
+     </li>
+     <li class="question-item">
+         <button class="btn btn-financial-status" id="terrible">Terrible</button>
+     </li> 
+ </ul> -->
+
+
+ <!-- 
+    <p class="question-text">Have you ever participated to any therapy?</p>
+                <ul class="question-items">
+                    <li class="question-item">
+                        <button class="btn btn-financial-status" id="yes">Yes</button>
+                    </li>
+                    <li class="question-item">
+                        <button class="btn btn-financial-status" id="no">No</button>
+                    </li>
+                </ul>
+  -->
+
+
+<!-- <p class="question-text">Have you ever participated to any therapy?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-financial-status" id="yes">Yes</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-financial-status" id="no">No</button>
+    </li>
+</ul> -->
+
+
+<!-- 
+<p class="question-text">What about your current consideration which leads you participate to therapy program?</p>
+<ul class="question-items">
+    <li class="question-item">                        
+        <input type="checkbox" value="ssss"/>I feel depressed
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I feel life is nonsense and bored                        
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I lose my concentration
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I have experienced trauma
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I lose self-confidence
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I feel anxiety
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I can not explain right now
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>I don’t know
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Other
+    </li>
+</ul>
+<button class="btn btn-next" id="btn-current-concideration">Next</button> -->
+
+
+<!-- <p class="question-text">How do you asses your physical health?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-physical-health" id="exellent">Exellent</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-physical-health" id="good">Good</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-physical-health" id="fair">Fair</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-physical-health" id="bad">Bad</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-physical-health" id="terrible">Terrible</button>
+    </li> 
+</ul> -->
+
+<!-- 
+<p class="question-text">Do you feel any chronic pain?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-chronic-pain" id="never">Never</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-chronic-pain" id="sometimes">Sometimes</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-chronic-pain" id="many times">Many times</button>
+    </li>
+</ul> -->
+
+
+<!-- <p class="question-text">Have you ever thought about suciede?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-think-suciede" id="never">Never</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-think-suciede" id="sometimes">Sometimes</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-think-suciede" id="many times">Many times</button>
+    </li>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-think-suciede" id="tried but not succeed">Tried but not succeed</button>
+    </li>
+</ul> -->
+
+
+<!-- <p class="question-text">Do you have any addiction?</p>
+<ul class="question-items">
+    <li class="question-item">
+        <button class="btn btn-addiction" id="yes">Yes</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-addiction" id="no">No</button>
+    </li>
+    <li class="question-item">
+        <button class="btn btn-addiction" id="not regular">Not Regular</button>
+    </li>
+</ul> -->
+
+
+<!-- <p class="question-text">What kind of addiction do you have? </p>
+<ul class="question-items">
+    <li class="question-item">                        
+        <input type="checkbox" value="ssss"/>Alcohol
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Ciggarate
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Sniff
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Chemical/Narcotic Drug
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Other
+    </li>
+</ul>
+<button class="btn btn-next" id="btn-addiction-type">Next</button> -->
+
+
+<!-- 
+
+<p class="question-text">Do you have any regular activities?</p>
+<ul class="question-items">
+    <li class="question-item">                        
+        <input type="checkbox" value="ssss"/>Sport activities
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Go to Cinema
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Watching movie at home
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Listening to music
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Sight seeing
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Reading book
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Reading spiritual materials
+    </li>
+    <li class="question-item">
+        <input type="checkbox" value="ssss"/>Other activities
+    </li>
+</ul>
+<button class="btn btn-next" id="btn-activity-type">Next</button> -->
+
+
+
+
+<!-- 
+<div class="question-body">
+    <input type="email" name="email" id="email" placeholder="Email Address" class="question-input"/>
+    <input type="password" name="password" id="password" placeholder="Password" class="question-input"/>
+    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="question-input"/>
+    <button class="btn" id="btn-submit-form">Submit</button>
+</div> -->
+
+
+
+<!-- 
+<li class="question-item">      
+    <input type="checkbox" id="current-concideration1" name="current-concideration1" class="conciderations" value="I feel depressed">
+    <label for="current-concideration1">I feel depressed</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration2" name="current-concideration2"  class="conciderations" value="I feel life is nonsense and bored">
+    <label for="current-concideration2">I feel life is nonsense and bored</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration3" name="current-concideration3"  class="conciderations" value="I lose my concentration">
+    <label for="current-concideration3">I lose my concentration</label>                    
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration4" name="current-concideration4"  class="conciderations" value="I have experienced trauma">
+    <label for="current-concideration4">I have experienced trauma</label>
+    
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration5" name="current-concideration5"  class="conciderations" value="I lose self-confidence">
+    <label for="current-concideration5">I lose self-confidence</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration6" name="current-concideration6"  class="conciderations" value="I feel anxiety">
+    <label for="current-concideration6">I feel anxiety</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration7" name="current-concideration7"  class="conciderations" value="I can not explain right now">
+    <label for="current-concideration7">I can not explain right now</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration8" name="current-concideration8"  class="conciderations" value="I don't know">
+    <label for="current-concideration8">I don't know</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="current-concideration9" name="current-concideration9"  class="conciderations" value="Other">
+    <label for="current-concideration9">Other</label>                    
+</li> -->
+<!-- 
+<script>
+    const btnTest = document.getElementById('btn-test')
+    const arr =[]
+    btnTest.addEventListener('click',()=>{                
+        document.querySelectorAll('input[class=conciderations]:checked').forEach(function(elem) {
+            arr.push(elem.value)
+        });
+        console.log(arr);
+    })
+    
+</script> -->
+
+
+<!-- 
+<li class="question-item">      
+    <input type="checkbox" id="activity1" name="activity1" class="activities" value="Sport activities">
+    <label for="activity1">Sport activities</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity2" name="activity2" class="activities" value="Go to Cinema">
+    <label for="activity2">Go to Cinema</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity3" name="activity3" class="activities" value="Watching movie at home">
+    <label for="activity3">Watching movie at home</label>                    
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity4" name="activity4" class="activities" value="Listening to music">
+    <label for="activity4">Listening to music</label>
+    
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity5" name="activity5" class="activities" value="Sight seeing">
+    <label for="activity5">Sight seeing</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity6" name="activity6" class="activities" value="Reading book">
+    <label for="activity6">Reading book</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity7" name="activity7" class="activities" value="Reading spiritual materials">
+    <label for="activity7">Reading spiritual materials</label>
+</li>                   
+<li class="question-item">
+    <input type="checkbox" id="activity8" name="activity8" class="activities" value="resting/sleeping">
+    <label for="activity8">Resting / Sleeping</label>
+</li>
+<li class="question-item">
+    <input type="checkbox" id="activity9" name="activity9" class="activities" value="Other activities">
+    <label for="activity9">Other activities</label>                    
+</li> -->
+
+<!-- 
+    <li class="question-item">
+                        <input type="checkbox" id="addiction2" name="addiction2" class="addictions" value="Ciggarate">
+                        <label for="addiction2">Ciggarate</label>
+                    </li>
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction3" name="addiction3" class="addictions" value="Snuff">
+                        <label for="addiction3">Snuff</label>                    
+                    </li>
+                    <li class="question-item">      
+                        <input type="checkbox" id="addiction1" name="addiction1" class="addictions" value="Alcohol">
+                        <label for="addiction1">Alcohol</label>
+                    </li>
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction4" name="addiction4" class="addictions" value="Chemical/Narcotic Drug">
+                        <label for="addiction4">Chemical/Narcotic Drug</label>
+                        
+                    </li>                   
+                    <li class="question-item">
+                        <input type="checkbox" id="addiction5" name="addiction5" class="addictions" value="Other">
+                        <label for="addiction5">Other</label>                    
+                    </li>
+ -->
+    </body>
+
+    </html>

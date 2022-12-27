@@ -1,0 +1,493 @@
+/*
+colors
+#266afc; ligh blue
+#030348; dark blue
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html,body{
+    font-family: 'Arial';
+    margin:0;
+    padding: 0;
+    background-color: #266afc;    
+    color:wheat;
+}
+
+/*typography*/
+h1{
+    font-weight: 700;
+    /* font-size:1.5rem; */
+    font-size: 4vw;
+}
+
+h2{
+    font-size: 5vw;
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    /* font-size: 4vw; */
+    font-size:1rem;
+    font-weight: 900;
+    text-align: center;
+}
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.therapist-profile-image{
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+}
+.patient-profile-image{
+    border-radius: 16px;
+    width:100px;
+    height: 100px;
+}
+
+.nav-link,
+header,
+footer,
+.dark{
+    background-color: #030348;
+}
+.btn{
+    border-radius: 32px;
+    background-color: #030348;
+    padding:10px;
+    display: block;
+    /* display: inline-block; */
+    width:100%;
+    margin:0 auto;
+    color:whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-light{
+    color: #030348;
+    background-color: #266afc;
+    border:1px solid #030348;
+}
+
+article .btn{
+    font-size: 0.851rem;
+    padding:0.4em;
+    width: 100px;
+    margin-left: 0;
+}
+
+
+.left-side{
+    display: flex;
+    width: 50%;
+    justify-items: center;
+    text-decoration: none;
+    color:whitesmoke;
+}
+.right-side{
+    width: 50%; 
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+header{
+    display: flex;
+    padding:2.5em 0.5em;    
+}
+.search-box{
+    padding:0.5em;
+    border-radius: 1em;
+    border:none;
+    width: 100%;
+}
+
+a.language{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/* main navigation link*/
+.nav-links{    
+    margin:0;
+    padding:0;
+    padding-bottom: 1em;    
+}
+.nav-link-item{
+    list-style: none;    
+}
+.nav-link{
+    padding:5px 0;
+    border-bottom: 1px solid #030348;
+    text-decoration: none;
+    width: 100%;
+    color:whitesmoke;
+    display: inline-block;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.nav-link:hover{
+    background-color: #266afc;
+    color:#100f0f;
+}
+
+.main-image{
+    width:100%;
+    padding:0.125em;    
+}
+
+
+.main-image-section h2{    
+    font-size: 5vw;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.dark .btn{
+    border:1px solid red;
+}
+section{
+    padding:1.125em 0;
+}
+
+.problems{
+    padding-left: 0.5em;
+    list-style: none;
+    font-size:2rem;
+    line-height: 1.5;
+}
+.heading-description{
+    font-size:1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+}
+.therapists,
+.patients-history,
+.articles{
+    margin-top:1em;    
+}
+.therapist,
+.patient-history,
+article{
+    display:block;    
+    padding:1.25em 1em;
+    margin:0 auto;    
+    text-align: center;
+    line-height: 1.5;
+    font-size:1.125rem;
+}
+
+.article-title{
+    font-size:1rem;
+    margin-bottom: 1em;
+}
+.article-specification{
+    font-size:0.75rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    border-bottom: 1px solid red;
+}
+
+.author span,
+.publish-date span,
+.category span{
+    font-weight: 700;
+    /* color:red; */
+}
+
+
+
+.article-body{
+    text-align: left;
+}
+
+footer{
+    color:whitesmoke;
+    font-size:1.25rem;
+    text-align: center;
+}
+
+.footer-head{
+    
+    margin:0 auto;
+}
+.footer-logo{
+    border-radius: 50%;
+    margin-top:0.75em;
+    width:50px;    
+}
+.footer-title{
+    margin-top:0.75em;
+    font-size:1rem;
+    font-weight: 300;    
+}
+
+.footer-list{
+    margin-top:1em;
+    list-style: none;
+}
+
+.footer-list li:hover{    
+    background-color: #266afc;
+}
+
+.footer-link{
+    padding:.5em 0;
+    display: inline-block;
+    color:wheat;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color:#030348;    
+}
+
+.footer-social-media-links,
+.footer-footnote{
+    padding:1em 0;
+}
+
+.social-media-links{
+    font-size:1.5rem;
+    text-decoration: none;
+    color:wheat;
+}
+
+.footer-footnote{
+    font-size:0.75rem;    
+    font-weight: 300;        
+}
+
+.services-section{
+
+    padding:1em;
+}
+.problems{
+    padding:1em 0;
+    margin:0;    
+}
+.problem-item:not(:last-child){    
+    border-bottom: 1px solid chocolate;    
+}
+.problem-item-link{
+    text-decoration: none;
+    color:wheat;
+}
+
+
+.question-container{
+    
+    color:wheat;
+    display: none;
+    /* display: inline; */
+    position:fixed;
+    
+    background-color: #266afc;     
+    box-shadow: 1px 1px 5px #030348;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:400px;
+    height: fit-content;
+    margin:auto;    
+    border-radius: 1em;
+}
+
+.question-header{
+    margin-bottom: 1em;    
+}
+
+.question-cancel-btn{
+    font-size: 1em;
+    font-weight: 700;
+    display: block;    
+    cursor: pointer;
+    border:1px solid transparent;
+    background-color: transparent;
+    margin:.7em 0.7em 0 auto;    
+}
+.question-title{    
+    font-size:1.5em;
+    font-weight: 400;    
+}
+.question-body{
+    padding:.5em;
+    margin-bottom: 1em;    
+}
+.question-text{
+    font-size:1em;
+    font-weight: 500;
+    text-align: center;
+    
+    padding-bottom: .5em;
+}
+.question-items{
+    list-style: none;
+}
+.question-item{
+    margin-bottom:1em;
+    /* border:1px solid red; */
+}
+
+.question-item button{
+    cursor: pointer;
+    padding:1em;
+}
+
+.question-input{
+    font-size:1.1em;
+    display: block;
+    border:2px solid #030348;
+    border-radius:0.3em;
+    
+    width:100%;
+    padding:0.5em .75em;
+    margin:0 auto;
+    margin-bottom: .5em;
+}
+
+.btn-next{
+    width:100px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: 1em;
+
+}
+
+/* input[type(checkbox)]{
+    color:red;
+    border:2px solid green;
+} */
+
+/* large screen */
+@media(min-width:600px){
+    main{
+        /* width:95%;
+        margin:0 auto; */
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    .main-nav{
+        display: inline;
+        margin:0;
+        padding:0;
+        background-color:  #030348;
+    }
+    /* main navigation link*/
+    
+    .nav-link-item{
+        display: inline;
+    }
+    .nav-link{        
+        margin:0;        
+        text-decoration: none;
+        width: auto;
+        padding:0.5em 1em;        
+    }
+
+    .nav-link:hover{
+        /* border:1px solid cadetblue; */
+    }
+    #exit{
+        display: none;
+    }
+
+    .main-image-section{
+        padding:0;        
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-image{
+        width:75%;
+    }
+
+
+    .problems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .problem-item{
+        margin:0.1em;
+        border:none;
+        background-color: chocolate;
+        padding:0.2em 0.3em;
+        border-radius: 0.2em;
+    }
+
+
+
+    .therapists{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .therapist{
+        width:25%;
+    }
+    .therapist-name{
+        font-size:1rem;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    .patients-history{
+        display: flex;
+    }
+    .patient-history{
+        display: flex;
+    }
+
+   
+    .articles{
+        margin:0;
+        display: flex;
+        flex-wrap: wrap;        
+        flex-direction: row;
+        justify-content: space-between;         
+    }
+    
+    article{
+        color:wheat;
+        padding:1em;                
+        min-width:25%;
+        max-width: 33%;         
+    }
+
+    .article-specification{
+        flex-direction: column;
+        width:100%;        
+        text-align: left;
+    }
+
+    .btn{
+        width:300px;
+    }
+
+
+}
+
